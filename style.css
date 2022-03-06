@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Raleway:wght@200&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root{
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+img{
+    max-width: 100%;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+}
+
+.btn{
+    border-style: none;
+    font-family:inherit;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+body{
+    font-family:'Red Hat Display', sans-serif;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+p{
+    font-size: 16px;
+    line-height: 1.5rem;
+    color:var(--Desaturated-blue)
+}
+
+.bg__image{
+    background: url("./images/pattern-background-mobile.svg") no-repeat 
+        center/cover;
+        height:400px;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index:-1;
+}
+
+.container{
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+    margin: 2rem;
+    
+    background-color: white;
+    
+}
+
+h1{
+    color: var(--Dark-blue);
+    font-weight: 900;
+    margin-top:2rem;
+    margin-bottom: 1.5rem;
+}
+
+h4{
+    font-weight: 900;
+}
+
+/* .container div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+} */
+
+.container .Plan article{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;    
+}
+
+.container .Plan article div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container .Plan{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 72.5%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.container .Plan article img{
+    margin-right: 2rem;
+}
+
+.btn_change{
+    background-color:transparent;
+    text-decoration: underline;
+    color:var(--Bright-blue);
+}
+
+.btn_change:hover{
+    text-decoration: none;
+    color:hsl(245, 75%, 52%, .6);
+}
+
+.container .buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight:bold;
+}
+
+.btn_primary{
+    background-color: var(--Bright-blue);
+    border-radius: .5rem;
+    height:3rem;
+    color:white;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width:250%;
+}
+
+.btn_primary:hover{
+    background-color:hsl(245, 75%, 52%, .6);
+}
+
+.btn_secondary{
+    background-color: transparent;
+    color: var(--Desaturated-blue);
+}
+
+.btn_secondary:hover{
+    color:black;
+}
+
+.container p{
+    color:hsl(223, 47%, 23%, .6);
+}
+
+.container p.desc{
+    margin: 0 5rem;
+    margin-bottom: 2rem;
+}
+
+
+
+
+
+@media(min-width:500px){
+    .bg__image{
+        background: url("./images/pattern-background-desktop.svg") no-repeat center/cover;
+        height:50vh;
+    }
+
+    .container{
+        width:450px;
+    }
+}
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
